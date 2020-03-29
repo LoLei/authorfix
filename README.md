@@ -47,5 +47,5 @@ I use additional automatic fixes in Vim for imported BibTeX entries:
 
 ## Background
 * Inspired by [nickjj/title-case-converter](https://github.com/nickjj/title-case-converter)
-* I had a working regex to to the same in sed, but for some reason in wouldn't work in vim: `s/\v(?!and\b)\b([[:alpha:]-]+ ?[[:alpha:]-]*)(,) ([[:alpha:]-]+ ?[[:alpha:]-]*)\b(?<!\b and)/g`
+* I had a working regex to to the same in sed, but for some reason in wouldn't work in vim: `s/\v(?!and\b)\b([[:alpha:]-]+ ?[[:alpha:]-]*)(,) ([[:alpha:]-]+ ?[[:alpha:]-]*)\b(?<!\b and)/\3 \1/g`
   * Also this Python version handles if a person has multiple last names, and will enclose them in `{}`, which makes LaTeX use them correctyl in citations.
