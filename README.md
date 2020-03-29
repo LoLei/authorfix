@@ -36,7 +36,7 @@ vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
 ```bash
 curl \
   -L https://raw.githubusercontent.com/lolei/authorfix/master/authorfix.py \
-  -o $HOME/.local/bin/authorfix && sudo chmod +x $HOME/.local/bin/authorfix
+  -o $HOME/.local/bin/authorfix && chmod +x $HOME/.local/bin/authorfix
 ```
 <sup>Thanks [@nickjj](https://github.com/nickjj)</sup>
 
