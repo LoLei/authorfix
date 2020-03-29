@@ -34,7 +34,7 @@ vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
 
 ## Installation
 ```bash
-sudo curl \
+curl \
   -L https://raw.githubusercontent.com/lolei/authorfix/master/authorfix.py \
   -o $HOME/.local/bin/authorfix && sudo chmod +x $HOME/.local/bin/authorfix
 ```
