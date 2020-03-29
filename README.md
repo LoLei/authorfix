@@ -42,7 +42,7 @@ curl \
 
 ## Additional Resources
 I use additional automatic fixes in Vim for imported BibTeX entries:
-* [Title Case Capitalization](https://github.com/LoLei/title-case-converter)
+* [Title Case Capitalization](https://github.com/nickjj/title-case-converter)
 * [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/master/.vimrc#L130)
 
 ## Background
