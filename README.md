@@ -1,10 +1,10 @@
 # authorfix
-Fix common exported BibTeX author formatting in Python (and Vim)
+Fix common exported BibTeX author formatting in Python (and Vim) :scroll:
 
 ## Info
-This script changes `Lastname, Firstname` to `Firstname Lastname`.
+This script changes `Lastname, Firstname` to `Firstname Lastname` (in LaTeX BibTeX bibliography entries).
 
-A common exporting format of BiBTeX on e.g. scholar.google.com is this (sample article):
+A common exporting format of BibTeX on e.g. scholar.google.com is this (sample article):
 ```
 @article{fournier2017survey,
   title={A survey of sequential pattern mining},
@@ -41,7 +41,7 @@ curl \
 <sup>Thanks [@nickjj](https://github.com/nickjj)</sup>
 
 ## Additional Resources
-I use additional automatic fixes in Vim for imported BiBTeX entries:
+I use additional automatic fixes in Vim for imported BibTeX entries:
 * [Title Case Capitalization](https://github.com/nickjj/title-case-converter)
 * [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/master/.vimrc#L130)
 
