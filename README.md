@@ -43,7 +43,7 @@ sudo curl \
 ## Additional Resources
 I use additional automatic fixes in Vim for imported BiBTeX entries:
 * [Title Case Capitalization](https://github.com/nickjj/title-case-converter)
-* [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/master/.vimrc)
+* [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/master/.vimrc#L130)
 
 ## Background
 * Inspired by [nickjj/title-case-converter](https://github.com/nickjj/title-case-converter)
