@@ -1,10 +1,10 @@
 # authorfix
-Fix common exported BibTeX author formatting in Python (and Vim)
+Fix common exported BibTeX author formatting in Python (and Vim) :scroll:
 
 ## Info
-This script changes `Lastname, Firstname` to `Firstname Lastname`.
+This script changes `Lastname, Firstname` to `Firstname Lastname` (in LaTeX BibTeX bibliography entries).
 
-A common exporting format of BiBTeX on e.g. scholar.google.com is this (sample article):
+A common exporting format of BibTeX on e.g. scholar.google.com is this (sample article):
 ```
 @article{fournier2017survey,
   title={A survey of sequential pattern mining},
@@ -36,16 +36,16 @@ vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
 ```bash
 curl \
   -L https://raw.githubusercontent.com/lolei/authorfix/master/authorfix.py \
-  -o $HOME/.local/bin/authorfix && sudo chmod +x $HOME/.local/bin/authorfix
+  -o $HOME/.local/bin/authorfix && chmod +x $HOME/.local/bin/authorfix
 ```
 <sup>Thanks [@nickjj](https://github.com/nickjj)</sup>
 
 ## Additional Resources
-I use additional automatic fixes in Vim for imported BiBTeX entries:
+I use additional automatic fixes in Vim for imported BibTeX entries:
 * [Title Case Capitalization](https://github.com/nickjj/title-case-converter)
 * [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/master/.vimrc#L130)
 
 ## Background
 * Inspired by [nickjj/title-case-converter](https://github.com/nickjj/title-case-converter)
-* I had a working regex to to the same in sed, but for some reason in wouldn't work in vim: `s/\v(?!and\b)\b([[:alpha:]-]+ ?[[:alpha:]-]*)(,) ([[:alpha:]-]+ ?[[:alpha:]-]*)\b(?<!\b and)/g`
+* I had a working regex to to the same in sed, but for some reason in wouldn't work in vim: `s/\v(?!and\b)\b([[:alpha:]-]+ ?[[:alpha:]-]*)(,) ([[:alpha:]-]+ ?[[:alpha:]-]*)\b(?<!\b and)/\3 \1/g`
   * Also this Python version handles if a person has multiple last names, and will enclose them in `{}`, which makes LaTeX use them correctyl in citations.
