@@ -4,7 +4,7 @@ from sys import stdin
 
 
 def author_fix(authors):
-    authors = authors.split("and")
+    authors = authors.split(" and ")
     for i, author in enumerate(authors):
         author = author.split(",")
         author.reverse()
