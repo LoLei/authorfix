@@ -26,9 +26,8 @@ Running this script on this string changes it to:
 ## Vim Macro
 Add this to your `.vimrc`:
 ```vimscript
-vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
+vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR><ESC>x
 ```
-<sup>Thanks [@nickjj](https://github.com/nickjj)</sup>
 
 `authorfix` needs to be in your `PATH` for this.
 
@@ -38,7 +37,6 @@ curl \
   -L https://raw.githubusercontent.com/lolei/authorfix/master/authorfix.py \
   -o $HOME/.local/bin/authorfix && chmod +x $HOME/.local/bin/authorfix
 ```
-<sup>Thanks [@nickjj](https://github.com/nickjj)</sup>
 
 ## Additional Resources
 I use additional automatic fixes in Vim for imported BibTeX entries:
