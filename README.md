@@ -41,7 +41,7 @@ curl \
 ## Additional Resources
 I use additional automatic fixes in Vim for imported BibTeX entries:
 * [Title Case Capitalization](https://github.com/nickjj/title-case-converter)
-* [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/master/.vimrc#L130)
+* [Converting `{}` to `""`](https://github.com/LoLei/dotfiles/blob/d2d3fb97f654710c64cbac828db3937ebc30904b/.vimrc#L150)
 
 ## Background
 * Inspired by [nickjj/title-case-converter](https://github.com/nickjj/title-case-converter)
